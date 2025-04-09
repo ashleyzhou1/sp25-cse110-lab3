@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="https://raw.githubusercontent.com/ashleyzhou1/Lab2_Starter/main/favicon.ico" type= "image/x-icon">
+</head>
+<body>
+
+    <header>
+        <div>
+            <h1>Meeting Minutes</h1>
+            <br>
+            <h2><span>Topic: Initial Brainstorm for Fundraising</span></h2>
+            <h2>Date: April 7, 2025</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#attendance">Attendees</a></li>
+                <li><a href="#agenda">Agenda</a></li>
+                <li><a href="#notes">Notes/Items Discussed</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h3 id = "attendance">Attendees</h3>
+
+        <ul>
+            <li>Bob</li>
+            <li>Mary</li>
+            <li>William</li>
+        </ul>
+
+        <h3 id = "agenda">Agenda</h3>
+
+        <ol>
+            <li>Finish discussing last week's items</li>
+            <li>Discuss new ideas</li>
+            <li>Wrap up discussion with additional items</li>
+        </ol>
+
+        <h3 id = "notes">Notes/Items Discussed</h3>
+
+        <h4>Notes on previous meeting topics</h4>
+            <p>Mainly finalized budget planning.<br> Final Budget: <b>$40</b></p>
+        <h4>New items discussed today</h4>
+            <p>Discussed fundraising.<br> Amount needed to <i>fundraise</i>, (meaning we get this money ourselves): <b>$50</b></p>
+        <h4>Additional comments/discussion</h4>
+            <p>Want to host <strong>community events</strong> for fundraising. <em>Must</em> reach goal by mid May!</p>
+        <h4>Image of budget and fundraising diagram:</h4>
+        <img src="https://github.com/ashleyzhou1/Lab2_Starter/blob/main/cse110lab2Image.png?raw=true" alt="Diagram of Budget and Fundraising" width = "250">
+        <h4>Screen recording of Today's Notes</h4>
+        <video controls width="400">
+            <source src="https://github.com/ashleyzhou1/Lab2_Starter/blob/main/cse110lab2video.mov?raw=true" type="video/quicktime" />
+            <a href="https://github.com/ashleyzhou1/Lab2_Starter/blob/main/cse110lab2video.mov?raw=true">Video recording here</a>
+        </video>
+        <h4>Audio of meeting discussion</h4>
+        <figure>
+            <figcaption>Click play to listen to audio:</figcaption>
+            <audio controls src="https://github.com/ashleyzhou1/Lab2_Starter/blob/main/cse110lab2audio.m4a?raw=true"></audio>
+            <a href="https://github.com/ashleyzhou1/Lab2_Starter/blob/main/cse110lab2audio.m4a?raw=true"> </a>
+        </figure>
+
+    </main>
+
+    <hr>
+    <footer>
+        <section>
+            <h4>Expand for Agenda Summary</h4>
+            <details>
+                <summary>Click here to show summary of agenda</summary>
+                <ol>
+                    <li>Discuss last week's items</li>
+                    <li>Discuss new ideas</li>
+                    <li>Talk about additional items</li>
+                </ol>   
+            </details>
+        </section>
+        <hr>
+        <br>
+
+        <form onsubmit="alert('Response Recorded')">
+            <fieldset>
+                <label for="date">Date of Meeting:</label>
+                <input type="date" id="date" name="date" required/><br><br>
+
+                <label for="name">Name:</label>
+                <input list="names" id="name" name="name"/>
+                <datalist id="names">
+                    <option value="Bob"></option>
+                    <option value="Mary"></option>
+                    <option value="William"></option>
+                </datalist><br>
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" required/><br><br>
+
+                <label for="email">I want my form responses emailed to me:</label><br>
+                <input type="radio" id="yes" name="yes" value="yes">
+                <label for="yes">Yes</label>
+                <input type="radio" id="no" name="no" value="no">
+                <label for="no">No</label><br><br>
+
+                <label for="record">I want my email to be recorded:</label>
+                <input type="checkbox" id="record" name="record"><br><br>
+
+                <label for="attendance">Will you attend the next meeting?</label>
+                <select name="yes-or-no" id="yes-or-no">
+                    <option value="choose">Choose Yes or No</option>
+                    <option value="yes">Yes</option>
+                    <option value="yes">No</option>
+                </select>
+                <br><br>
+
+                <label for="additional">Additional Comments or Concerns:</label><br>
+                <textarea id="additional" name="additional" rows="5" cols="30"></textarea><br><br>
+
+                <button>Submit Form</button><br><br>
+
+            </fieldset>
+        </form>
+    </footer>
+    
+</body>
+</html>
