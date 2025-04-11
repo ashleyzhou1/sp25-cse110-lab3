@@ -1,14 +1,48 @@
 :root {
     /* CSS Variable - Accent color in HSL */
     --custom-blue: hsl(210, 73%, 88%);
-  }
+    font-size: 16px;
+}
 
 body{
     background-color: #de7f8d;
+    border: 14px solid hsl(212, 13%, 19%);
+    padding-top: 50pt;
+    padding-right: 40pt;
+    padding-bottom: 50pt;
+    padding-left: 40pt;
+}
+
+header{
+    background-color: greenyellow;
+    padding: 2em 1em 2em 1em;
+    color: #FF6347;
+}
+
+ul{
+    color: cyan;
+    margin-top: 2em;
+    margin-right: 1em;
+    margin-bottom: 2em;
+    margin-left: 1em;
+    border: 2px dashed rgb(103, 31, 31);
+}
+
+ol{
+    color: aquamarine;
+    margin: 2em 1em 2em 1em;
+    border-style: dashed;
+    border-color:azure;
+    border-width: 2px;
+    border-radius: 2rem; 
 }
 
 h1{
-    color: black
+    color: red;
+    padding: 5cm;
+    font-size: 2rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h2{
@@ -16,7 +50,7 @@ h2{
 }
 
 h3{
-    color: cyan;
+    color: red;
     color: color-mix(in hsl, hsl(102, 12%, 22%) 20%, yellow 80%)
 }
 
@@ -24,14 +58,10 @@ h4{
     color: var(--custom-blue, #34db42);
 }
 
-header{
-    color: #FF6347;
-}
-
 main{
     color: hsl(210, 100%, 40%);
 }
 
 footer{
-    background-color: rgba(0, 0, 255, 0.8);
+    background-color: rgba(0, 0, 255, 0.8); 
 }
