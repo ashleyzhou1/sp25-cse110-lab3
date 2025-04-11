@@ -1,0 +1,37 @@
+:root {
+    /* CSS Variable - Accent color in HSL */
+    --custom-blue: hsl(210, 73%, 88%);
+  }
+
+body{
+    background-color: #de7f8d;
+}
+
+h1{
+    color: black
+}
+
+h2{
+    color: color(display-p3 0 0 0 / 0.9);
+}
+
+h3{
+    color: cyan;
+    color: color-mix(in hsl, hsl(102, 12%, 22%) 20%, yellow 80%)
+}
+
+h4{
+    color: var(--custom-blue, #34db42);
+}
+
+header{
+    color: #FF6347;
+}
+
+main{
+    color: hsl(210, 100%, 40%);
+}
+
+footer{
+    background-color: rgba(0, 0, 255, 0.8);
+}
