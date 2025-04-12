@@ -33,15 +33,21 @@ ul{
     margin-bottom: 2em;
     margin-left: 1em;
     border: 2px dashed rgb(103, 31, 31);
+    position: relative;
+    top: 20px;
+    left: 30px;
 }
 
 ol{
-    color: aquamarine;
+    color: black;
     margin: 2em 1em 2em 1em;
     border-style: dashed;
-    border-color:azure;
+    border-color:rgb(37, 151, 151);
     border-width: 2px;
     border-radius: 2rem; 
+    position: absolute;
+    top: 900px;
+    left: 200px;
 }
 
 h1{
@@ -74,4 +80,58 @@ main{
 
 footer{
     background-color: rgba(0, 0, 255, 0.8); 
+}
+
+button:hover {
+    color: magenta;
+}
+
+button:active {
+    transform: scale(0.8);
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem; /*evenly distribute items*/
+    border: 2px dashed yellow;
+}
+
+.grid-item-1{
+    color:magenta;
+    font-style:italic;
+    background-color:white;
+}
+
+.grid-item-2{
+    color:black;
+    background-color:yellow;
+}
+
+.grid-item-3{
+    color:brown;
+    background-color:yellow;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /*evenly distribute items*/
+    flex-wrap:wrap;
+}
+
+.flex-item-1{
+    color:magenta;
+    font-style:italic;
+    background-color:white;
+}
+
+.flex-item-2{
+    color:black;
+    background-color:white;
+}
+
+.flex-item-3{
+    color:brown;
+    background-color:white;
 }
