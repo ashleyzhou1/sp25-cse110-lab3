@@ -4,6 +4,10 @@
     font-size: 16px;
 }
 
+*{
+    line-height: 1;
+}
+
 body{
     background-color: #de7f8d;
     border: 14px solid hsl(212, 13%, 19%);
@@ -26,7 +30,7 @@ header{
     color: #FF6347;
 }
 
-ul{
+nav > ul{
     color: rgb(63, 80, 80);
     display: block;
     margin-top: 2em;
@@ -75,20 +79,55 @@ h4{
     color: var(--custom-blue, #34db42);
 }
 
+h4, p{
+    font-style:italic;
+}
+
 main{
     color: hsl(210, 100%, 40%);
+}
+
+h3 ~ ul{
+    color: aliceblue;
+}
+
+h4 + p{
+    color:bisque;
 }
 
 footer{
     background-color: rgba(0, 0, 255, 0.8);
 }
 
-button:hover {
-    color: magenta;
+footer summary{
+    background-color:aquamarine;
 }
 
-button:active {
-    transform: scale(0.8);
+label:has(+input){
+    color: yellow;
+}
+
+label:has(+select){
+    color: yellow;
+}
+
+label:has(+textarea){
+    color: yellow;
+}
+
+#attendance{
+    font-style:italic;
+}
+
+input[type="text"] {
+    background-color: rgb(182, 182, 213);
+}
+
+button:hover {
+    color: magenta;
+    &:active{
+        transform: scale(0.8);
+    }
 }
 
 .grid-container{
@@ -114,6 +153,10 @@ button:active {
     background-color:yellow;
 }
 
+div.flex-container{
+    background-color: beige;
+}
+
 .flex-container{
     display: flex;
     flex-direction: column;
@@ -124,17 +167,14 @@ button:active {
 .flex-item-1{
     color:magenta;
     font-style:italic;
-    background-color:white;
 }
 
 .flex-item-2{
     color:black;
-    background-color:white;
 }
 
 .flex-item-3{
     color:brown;
-    background-color:white;
 }
 
 @media (max-width: 768px) {
