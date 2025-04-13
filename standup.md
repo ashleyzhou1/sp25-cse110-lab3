@@ -21,9 +21,9 @@ Overall topic discussed in meeting
 |Task #1|Describe the task|List the members assigned to this task|List additional notes related to completed task|
 
 ## Tasks for Next Week
-|Task Number| Description | Members |Challenges|
+|Task Number| Description | Members |Blockers|
 |-----------|-----------|---------|----------|
-|Task #1|Describe the task|List the members assigned to this task|List potential challenges of task|
+|Task #1|Describe the task|List the members assigned to this task|List potential blockers of task|
 
 ## Further Notes
 List any additional notes in regards to the meeting
