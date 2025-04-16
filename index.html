@@ -4,6 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        /* Set color of h3 */
+        h3{
+            color: red;
+            color: color-mix(in hsl, hsl(102, 12%, 22%) 20%, yellow 80%)
+        }
+
+        /* Set color of h4 */
+        h4{
+            color: var(--custom-blue, #34db42);
+        }
+    </style>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="icon" href="https://raw.githubusercontent.com/ashleyzhou1/Lab2_Starter/main/favicon.ico" type= "image/x-icon">
@@ -65,7 +79,7 @@
             <a href="https://github.com/ashleyzhou1/Lab2_Starter/blob/main/cse110lab2video.mov?raw=true">Video recording here</a>
         </video>
         <h4>Audio of meeting discussion</h4>
-        <figure>
+        <figure style="border: 3px dashed yellow;"">
             <figcaption>Click play to listen to audio:</figcaption>
             <audio controls src="https://github.com/ashleyzhou1/Lab2_Starter/blob/main/cse110lab2audio.m4a?raw=true"></audio>
             <a href="https://github.com/ashleyzhou1/Lab2_Starter/blob/main/cse110lab2audio.m4a?raw=true"> </a>

@@ -1,13 +1,15 @@
+/* Set custom color variable using HSL */
 :root {
-    /* CSS Variable - Accent color in HSL */
     --custom-blue: hsl(210, 73%, 88%);
     font-size: 16px;
 }
 
+/* Set all line heights to 1 */
 *{
     line-height: 1;
 }
 
+/* Set background color, border color and width, and padding */
 body{
     background-color: #de7f8d;
     border: 14px solid hsl(212, 13%, 19%);
@@ -17,6 +19,10 @@ body{
     padding-left: 40pt;
 }
 
+/* 
+   Set background color, text, align, font-family, height and width, 
+   padding, and color of header
+*/
 header{
     background-color: greenyellow;
     text-align:center;
@@ -30,6 +36,9 @@ header{
     color: #FF6347;
 }
 
+/* 
+  Set attributes of unordered list, which is direct child of nav
+*/
 nav > ul{
     color: rgb(63, 80, 80);
     display: block;
@@ -43,6 +52,10 @@ nav > ul{
     left: 30px;
 }
 
+/* 
+   Set color, margin border, position, and top and left width 
+   of ordered list 
+*/
 ol{
     color: black;
     margin: 2em 1em 2em 1em;
@@ -55,6 +68,7 @@ ol{
     left: 200px;
 }
 
+/* Set attributes of h1 */
 h1{
     color: red;
     text-align: center;
@@ -65,64 +79,68 @@ h1{
     margin-right: auto;
 }
 
+/* Set color of h2 */
 h2{  
     color: red;
     color: color(display-p3 0.5 0.5 0 / 0.9);
 }
 
-h3{
-    color: red;
-    color: color-mix(in hsl, hsl(102, 12%, 22%) 20%, yellow 80%)
-}
-
-h4{
-    color: var(--custom-blue, #34db42);
-}
-
+/* Set font style of h4 and p */
 h4, p{
     font-style:italic;
 }
 
+/* Set color of main */
 main{
     color: hsl(210, 100%, 40%);
 }
 
+/* Set color of h3 and an unordered list, which are general siblings */
 h3 ~ ul{
     color: aliceblue;
 }
 
+/* Set color of h4 and p, which are adjacent siblings */
 h4 + p{
     color:bisque;
 }
 
+/* Set background color of footer */
 footer{
     background-color: rgba(0, 0, 255, 0.8);
 }
 
+/* Set background color of summary, which is descendent of footer */
 footer summary{
     background-color:aquamarine;
 }
 
+/* Sets color of label immediately followed by input to yellow */
 label:has(+input){
     color: yellow;
 }
 
+/* Sets color of label immediately followed by select to yellow */
 label:has(+select){
     color: yellow;
 }
 
+/* Sets color of label immediately followed by textarea to yellow */
 label:has(+textarea){
     color: yellow;
 }
 
+/* Sets the font style for "attendance" header to italic */
 #attendance{
     font-style:italic;
 }
 
+/* Sets background color of email box in form */
 input[type="text"] {
     background-color: rgb(182, 182, 213);
 }
 
+/* Sets color of button and changes size if pressed */
 button:hover {
     color: magenta;
     &:active{
@@ -130,6 +148,7 @@ button:hover {
     }
 }
 
+/* Sets attributes of grid container */
 .grid-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -137,26 +156,31 @@ button:hover {
     border: 2px dashed yellow;
 }
 
+/* Sets attributes of first grid item */ 
 .grid-item-1{
     color:magenta;
     font-style:italic;
     background-color:white;
 }
 
+/* Sets attributes of second grid item */ 
 .grid-item-2{
     color:black;
     background-color:yellow;
 }
 
+/* Sets attributes of third grid item */ 
 .grid-item-3{
     color:brown;
     background-color:yellow;
 }
 
+/* Sets background color of flex container, which has an id of "flex-container" */ 
 div.flex-container{
     background-color: beige;
 }
 
+/* Sets attributes of flex container */
 .flex-container{
     display: flex;
     flex-direction: column;
@@ -164,19 +188,23 @@ div.flex-container{
     flex-wrap:wrap;
 }
 
+/* Sets color and font style of first flex item */
 .flex-item-1{
     color:magenta;
     font-style:italic;
 }
 
+/* Sets color of second flex item */
 .flex-item-2{
     color:black;
 }
 
+/* Sets color of third flex item */
 .flex-item-3{
     color:brown;
 }
 
+/* Changes background color and font size if screen width gets smaller */
 @media (max-width: 768px) {
     body{
         font-size: 14px;
